@@ -14,6 +14,8 @@ function errorHandling() {
 }
 
 // the nodeJs framework express gave us very simple way to handle the error we just have to pass the callback funciton and err as argument and it will handle the error
+
+const app = express();
 app.use((err, req, res, nest) => {
   console.log(err);
 });

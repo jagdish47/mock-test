@@ -27,7 +27,7 @@ const ans = students.reduce((result, student) => {
   }
 
   result[age].push(student);
-  return result; // Added return statement
+  return result;
 }, {});
 
 console.log(ans);
