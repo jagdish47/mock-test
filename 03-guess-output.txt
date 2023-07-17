@@ -1,11 +1,11 @@
 // The output of code is
 
-// start;
-// end;
-// timeout;
-// Promise 1 resolved
-// Promise 2 resolved
-// Promise 3 resolved
+"Start"
+"End"
+"timeout"
+"Promise 3 resolved"
+"Promise 1 resolved"
+"Promise 2 resolved"
 
 JavaScript is handle two kind of behaviour first is Synchronous and Asynchronous in synchronous the whaever code we write it will execute line by line like inside synchronous js will run in single thread. so that's the reason first we are getting output of Start and end
 Js is synchronous and code execute line by line so firstly we get output as start and end.
@@ -19,6 +19,6 @@ Than we will get ouput as timeout because in JS settimeout is handle by WebApi s
 Promises are asynchronus process so they are inside the another thread so than JS Engine will take them into Microstack queue which handle the Promises.
 so than inside callback we have callback settimeout they went into the queue and whenever the stack is empty event loop send them into the stack so we will get output as 
 
+-Promise 3 resolved
 -Promise 1 resolved
 -Promise 2 resolved
--Promise 3 resolved
